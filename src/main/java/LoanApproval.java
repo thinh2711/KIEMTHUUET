@@ -5,14 +5,15 @@ public class LoanApproval {
             return "Dữ liệu không hợp lệ";
         }
 
-        // 2) Áp dụng các quy tắc
+        // 2) Áp dụng quy tắc
         if (age < 18 || age > 60) {
-            return "Không được vay";              // R1, R2
-        }
-        if (income < 5.0) {
-            return "Không được vay";              // R3
+            return "Không được vay";  // R1, R2
         }
 
-        return "Được vay";                        // R5: 18..60 & 5.0..100
+        if (income < 5.0) {
+            return "Không được vay";  // R3
+        }
+
+        return "Được vay";  // R5
     }
 }

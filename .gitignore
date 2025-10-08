@@ -1,0 +1,24 @@
+# Ignore Maven target folder
+/target/
+
+# Ignore build output
+*.class
+*.log
+*.tmp
+
+# Ignore IntelliJ IDEA / VS Code project files
+/.idea/
+/.vscode/
+/*.iml
+
+# Ignore OS-specific files
+.DS_Store
+Thumbs.db
+
+# Ignore temporary files
+*.swp
+*.swo
+*.bak
+
+# Ignore dependency cache (optional)
+.mvn/
